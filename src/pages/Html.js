@@ -8,13 +8,18 @@ export function Html({children, title, styles = []}) {
         <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
         <meta name="Description" content="swtl demo">
         <title>${title ?? ''}</title>
+        <!-- App styles -->
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <!--  or -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tiny.css@0.12/dist/light.css"> -->
+      
         <style>
+          footer li {
+            list-style: none;
+            display: inline;
+          }
           img {
             max-width: 500px;
-          }
-
-          footer {
-            margin-top: 50px;
           }
         </style>
         ${styles}
@@ -37,9 +42,10 @@ export function Html({children, title, styles = []}) {
             <li><a href="/not-found">not found</a></li>
           </ul>
         </nav>
-        ${children}
+        <section>
+          ${children}
+        </section
         <footer>
-          This is the footer. 
           <ul>
             <li><a href="https://github.com/thepassle/swtl">Github</a></li>
             <li><a href="https://twitter.com/passle_">Twitter</a></li>
