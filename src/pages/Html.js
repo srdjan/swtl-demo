@@ -9,10 +9,11 @@ export function Html({children, title, styles = []}) {
         <meta name="Description" content="swtl demo">
         <title>${title ?? ''}</title>
         <!-- App styles -->
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> 
         <!--  or -->
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tiny.css@0.12/dist/light.css"> -->
-      
+        <!--  or -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
         <style>
           footer li {
             list-style: none;
